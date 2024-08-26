@@ -1,0 +1,523 @@
+/* {
+    border: red solid 1px;
+}
+*/
+
+html {
+   
+    scroll-behavior: smooth;
+
+}
+
+body{
+    display: block;
+    margin:0;
+    margin-top: 25px;
+    background-color: #bcdafc69;
+    
+
+}
+
+h1 {
+
+    font-size: 32px;
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+h2 {
+
+    font-size: 24px;
+    color: #4882C3;
+    text-align: center;
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+p {
+
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 18px;
+
+
+}
+
+
+
+button, .navButton{
+
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #F79233;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+
+}
+
+
+
+#pageContent {
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+
+}
+
+.noDecoration {
+
+    text-decoration: none;
+
+}
+
+/* Nav Section */
+
+nav {
+    display: flex;
+    vertical-align: top;
+    margin-left: auto;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.navButton {
+    width: 33%;
+    text-decoration: none;
+    color: black;
+}
+
+#workButton {
+
+    margin-right: 50px;
+
+}
+
+#contactButton {
+
+    margin-left: 50px;
+
+}
+
+nav a {
+
+    contain: content;
+
+}
+
+
+/* Sidebar / Skill Section */
+
+#sideBar {
+    display: flex;
+    width: 15%;
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-direction: column;
+    grid-area: sideBar;
+}
+
+
+#sideBar #socials, .skillGroup, #sideBar img {
+
+    display: flex;    
+    flex-direction: column;
+
+}
+
+#socialButtons {
+
+    text-align: center;
+
+}
+
+#socials button {
+
+    padding:15px;
+    border-radius: 15px;
+    margin-top: 25px;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+
+}
+
+#socials p {
+
+    margin:0 auto;
+    text-align: left;
+
+}
+
+#skills{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.spacing {
+
+    display:none;
+
+}
+
+.skillGroup {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skillGroup h2 {
+
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 12.5px;
+
+}
+
+.skillGroup p {
+
+    padding: 25px;
+    margin-left:0;
+    margin-right: 0;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    background-color: #bcdafc;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    
+
+}
+
+/* Body Section */
+
+#heroBanner {
+    display: flex;    
+    height: 75vh;
+    padding: 25px;
+    position: relative;
+    color: white;
+}
+
+#heroBanner div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#heroBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    text-align: left;
+    border-radius: 5px;
+}
+
+#heroBannerImage2 {
+
+    display: none;
+}
+
+#heroBanner h1 {
+    width: 60%;
+    text-align: left;
+    margin-left: auto;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal
+
+}
+
+#heroBanner p {
+    width: 60%;
+    text-align: left;
+    margin-left: auto;
+    margin-top: 0;
+    color: white;
+    font-size: 20px;
+
+}
+
+#heroBanner button{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#portfolio h1{
+
+    text-align: center;
+    
+}
+
+#grin{
+
+    grid-area: grin;
+
+}
+
+#localAdventures{
+
+    grid-area: localAdventures;
+
+}
+
+.workGrid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "localAdventures grin"
+    "localAdventures grin";
+    grid-gap: 25px;
+    margin-bottom: 25px;
+
+}
+
+.workShowcase {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr min-content;
+    grid-template-areas: 
+    "title"
+    "img";
+    border-radius: 5px;
+    background-color: #F79233;
+    position: relative;
+    border: 1px solid black;
+
+}
+
+.workShowcase h2 {
+
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 400;
+    color: black;
+    grid-area: title;
+    vertical-align: middle;
+
+}
+
+.workShowcase img {
+    
+    width: 100%;
+    position: relative;
+    object-fit: contain;
+    z-index: 0;
+    border-radius: 0px 0px 5px 5px;
+    grid-area: img;
+
+}
+
+.workShowcase p {
+
+    display: none;
+    transition: .3s;
+
+}
+
+
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+    background-color: #bcdafc;
+    text-align: center;
+    color: black;
+    grid-area: Footer;
+}
+
+footer div {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+footer h2  {
+    color: black;
+}
+
+footer p  {
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1500px) {
+
+    #sideBar #socials {
+
+        display:none;
+     }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #heroBannerImage1 {
+
+        display: none;
+    }
+
+    #heroBannerImage2 {
+
+        display: block;
+    }
+
+    #heroBanner {
+
+        height: 80vh;
+
+    }
+
+    #heroBanner h1 {
+        width: 40%;
+        text-align: left;
+        margin-left: auto;
+    }
+    
+    #heroBanner p {
+        width: 35%;
+        text-align: left;
+        margin-left: auto;
+        
+    }
+
+    #sideBar {
+
+        margin-right: 25;
+        
+    }
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    #sideBar {
+        flex-direction: row;
+        width: 100%;
+        margin:0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    #sideBar img, #sideBar #socials {
+
+       display:none;
+    }
+
+    #skills {
+
+        width: 100%;
+        flex-direction: row;
+
+    }
+
+    .skillGroup {
+
+        width: 100%;
+
+    }
+
+    .spacing {
+
+        display: block;
+        width:25px;
+        
+    }
+
+    #pageContent {
+
+        flex-direction: column;
+        margin:0;
+    
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #heroBanner {
+
+        padding: 10px;
+
+    }
+
+    #heroBanner h1 {
+        width: 100%;
+        text-align: left;
+        margin-left: 15px;
+    }
+    
+    #heroBanner p {
+        width: 40%;
+        text-align: left;
+        margin-left: auto;
+
+    }
+
+    .workGrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "localAdventures"
+        "grin";
+    
+    }
+
+  }
+
+  /* Animation States */
+
+
+
+
+  .buttonHover {
+
+    background-color: #4882C3;
+    color:black;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.50));
+    transition: .3s;
+
+}
+
+.navButton:active, button:active {
+
+    background-color: #AD5B0E !important;
+    color:white !important;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.50);
+    transition: .3s;
+
+}

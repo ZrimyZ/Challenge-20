@@ -1,0 +1,285 @@
+html {
+   
+    scroll-behavior: smooth;
+
+}
+
+.vh-75 {
+
+height: 75vh;
+
+}
+
+body{
+    display: block;
+    margin:0;
+    margin-top: 25px;
+    background-color: #bcdafc69;
+    
+
+}
+
+h1, #sideBar span {
+
+    font-size: 32px;
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #4882C3;
+
+}
+
+h2 {
+
+    font-size: 24px;
+    color: #4882C3;
+    text-align: center;
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+p{
+
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 18px;
+
+
+}
+
+
+
+button, .navButton{
+
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #F79233;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+
+}
+
+
+
+#pageContent {
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+
+}
+
+.noDecoration {
+
+    text-decoration: none;
+
+}
+
+/* Nav Section */
+
+.navbar-nav {
+    display: flex;
+    vertical-align: top;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.nav-item {
+
+    width: 33%;
+
+
+}
+
+
+.navButton {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* Sidebar / Skill Section */
+
+#sideBar a {
+
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F79233 !important;
+    font-size: 24px;
+
+
+}
+
+#sideBar{
+    
+    margin-top:25px;
+    
+}
+
+#sideBar div {
+
+    margin-left: calc(var(--bs-gutter-x)* .5);
+    width: 90%
+
+}
+
+/* Body Section */
+
+section h2 {
+
+    text-align: left;
+
+}
+
+figure img {
+
+    max-height: 620px;
+
+}
+
+.active {
+
+display: inline-block !important;
+
+}
+
+.carousel h2, .carouselWrapper h2{
+
+    text-align: center;
+
+}
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+    background-color: #bcdafc;
+    text-align: center;
+    color: black;
+    grid-area: Footer;
+}
+
+footer div {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+footer h2  {
+    color: black;
+}
+
+footer p  {
+    text-align: center;
+}
+
+#socialButtons {
+
+    text-align: center;
+
+}
+
+#socials button {
+
+    padding:15px;
+    border-radius: 15px;
+    margin-top: 25px;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+
+}
+
+#socials p {
+
+    margin:0 auto;
+    text-align: left;
+
+}
+
+#skills{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.spacing {
+
+    display:none;
+
+}
+
+
+
+
+  /* Animation States */
+
+
+
+
+  .buttonHover {
+
+    background-color: #4882C3;
+    color:black;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.50));
+    transition: .3s;
+
+}
+
+.navButton:active, button:active {
+
+    background-color: #AD5B0E !important;
+    color:white !important;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.50);
+    transition: .3s;
+
+}
+
+@media only screen and (max-width: 991) {
+
+    
+    .nav-item {
+    
+        width: 100%;
+    
+    }
+
+    button, .navButton{
+
+        border-radius: 10px;
+        border-color: transparent;
+        background-color: transparent;
+        padding: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-family: "Lemonada", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        cursor: pointer;
+    
+    }
+
+
+  }
